@@ -173,16 +173,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-		case 101:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$AN";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$AN;";
-			default:state=9999;return SCANNER(c);
-			}
 		case 200:
 			switch(c){
 			case 'O':state = 201;break;
@@ -240,17 +230,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 209:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$BOTH OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$BOTH OF$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 210:
 			switch(c){
 			case 'E':state = 211;break;
@@ -264,17 +243,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 212:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$BOTH SAEM";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$BOTH SAEM$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 300:
 			switch(c){
@@ -332,34 +300,12 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 308:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$DIFF OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$DIFF OF$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 309:
 			switch(c){
 			case 'T':state = 310;break;
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 310:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$DIFFRINT";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$DIFFRINT$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 400:
 			switch(c){
@@ -418,17 +364,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 408:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$EITHER OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$EITHER OF$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 500:
 			switch(c){
 			case 'A':state = 501;break;
@@ -465,17 +400,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 505:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$FAIL";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$FAIL$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 506:
 			switch(c){
 			case 'D':state = 507;break;
@@ -504,16 +428,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 510:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$FOUND YR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$FOUND YR$;";
-			default:state=9999;return SCANNER(c);
-			}
 		case 600:
 			switch(c){
 			case 'I':state = 601;break;
@@ -556,34 +470,12 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 606:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$GTFO";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$GTFO$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 607:
 			switch(c){
 			case 'H':state = 608;break;
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 608:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$GIMMEH";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$GIMMEH$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 700:
 			switch(c){
@@ -606,17 +498,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 703:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$HAI";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$HAI$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 704:
 			switch(c){
@@ -652,17 +533,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 709:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$HOW IZ I";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$HOW IZ I$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 800:
 			switch(c){
@@ -710,34 +580,12 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 806:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$I HAS A";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$I HAS A$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 807:
 			switch(c){
 			case 'Z':state = 808;break;
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 808:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$I IZ";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$I IZ$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 809:
 			switch(c){
@@ -802,17 +650,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 818:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$IF U SAY SO";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$IF U SAY SO$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 819:
 			switch(c){
 			case ' ':state = 820;break;
@@ -855,17 +692,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 825:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$IM IN YR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$IM IN YR$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 826:
 			switch(c){
@@ -916,17 +742,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 833:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$IM OUTTA YR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$IM OUTTA YR$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 834:
 			switch(c){
 			case 'Z':state = 835;break;
@@ -947,17 +762,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 837:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$ITZ A";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$ITZ A$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 900:
 			switch(c){
@@ -1001,17 +805,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 906:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$KTHXBYE";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$KTHXBYE;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1000:
 			switch(c){
 			case 'K':state = 1001;break;
@@ -1032,17 +825,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1003:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$MKAY";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$MKAY$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1100:
 			switch(c){
@@ -1067,17 +849,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1103:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$NOT";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$NOT;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1104:
 			switch(c){
 			case 'A':state = 1105;break;
@@ -1091,17 +862,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1106:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$NO WAI";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$NO WAI;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1107:
 			switch(c){
@@ -1131,28 +891,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1111:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$NUMBR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$NUMBR$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
-		case 1112:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$NUMBAR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$NUMBAR$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1200:
 			switch(c){
@@ -1191,17 +929,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1205:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$O RLY?";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$O RLY?$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1206:
 			switch(c){
 			case 'C':state = 1207;break;
@@ -1209,34 +936,12 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1207:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$OIC";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$OIC$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1208:
 			switch(c){
 			case 'G':state=1209;break;
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1209:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$OMG";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$OMG$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1300:
 			switch(c){
@@ -1300,17 +1005,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1309:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$PRODUKT OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$PRODUKT OF$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1400:
 			switch(c){
@@ -1382,28 +1076,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1410:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$QUOSHUNT OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$QUOSHUNT OF$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
-		case 1500:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$R";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$R$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1600:
 			switch(c){
 			case 'U':state=1601;break;
@@ -1439,17 +1111,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1605:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$SUM OF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$SUM OF$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1700:
 			switch(c){
 			case 'R':state=1701;break;
@@ -1477,17 +1138,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1704:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$TROOF";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$TROOF$;";
-			default:state=9999;return SCANNER(c);
-			}
 			
 		case 1800:
 			switch(c){
@@ -1531,17 +1181,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1807:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$VISIBLE";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$VISIBLE$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1900:
 			switch(c){
 			case 'I':state = 1901;break;
@@ -1565,28 +1204,6 @@ public class Project1_Scanner {
 			}
 			break;
 			
-		case 1903:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$WILE";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$WILE$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
-		case 1904:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$WIN";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$WIN$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 		case 1905:
 			switch(c){
 			case 'F':state = 1906;break;
@@ -1600,18 +1217,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-			
-		case 1907:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$WTF?";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$WTF?$;";
-			default:state=9999;return SCANNER(c);
-			}
-			
 
 		case 2000:
 			switch(c){
@@ -1626,16 +1231,6 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-		case 2003:
-			switch(c){
-			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$YR";
-			case ';':
-				state = 0;token = "";
-				return "KEYWORD$YR$;";
-			default:state=9999;return SCANNER(c);
-			}
 
 		case 2004:
 			switch(c){
@@ -1655,14 +1250,23 @@ public class Project1_Scanner {
 			default:state=9999;return SCANNER(c);
 			}
 			break;
-		case 2007:
+			
+		/** Accepting states*/
+		case 101:case 209:case 212:case 308:case 310:
+		case 408:case 505:case 510:case 606:case 608:
+		case 703:case 709:case 806:case 808:case 818:
+		case 825:case 833:case 837:case 906:case 1003:
+		case 1103:case 1106:case 1111:case 1112:case 1205:
+		case 1207:case 1209:case 1309:case 1410:case 1500:
+		case 1605:case 1704:case 1807:case 1903:case 1904:
+		case 1907:case 2003:case 2007:
 			switch(c){
 			case ' ':case '\n':
-				state = 0;token = "";
-				return "KEYWORD$YA RLY";
+				ret = token;state = 0;token = "";
+				return "KEYWORD$"+ret;
 			case ';':
-				state = 0;token = "";
-				return "KEYWORD$YA RLY$;";
+				ret = token;state = 0;token = "";
+				return "KEYWORD$"+ret+"$;";
 			default:state=9999;return SCANNER(c);
 			}
 		
