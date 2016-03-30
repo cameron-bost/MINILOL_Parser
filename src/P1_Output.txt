@@ -1,0 +1,115 @@
+*****ENCOUNTERED TOKENS*****
+-----------------------------------------------------------
+|Line   # | Token        | Type                           |
+-----------------------------------------------------------
+|Line 1   | HAI          | KEYWORD                        |
+|Line 3   | I HAS A      | KEYWORD                        |
+|Line 3   | x            | ID                             |
+|Line 3   | ITZ A        | KEYWORD                        |
+|Line 3   | NUMBR        | KEYWORD                        |
+|Line 4   | I HAS A      | KEYWORD                        |
+|Line 4   | y            | ID                             |
+|Line 4   | ITZ A        | KEYWORD                        |
+|Line 4   | NUMBAR       | KEYWORD                        |
+|Line 5   | I HAS A      | KEYWORD                        |
+|Line 5   | z            | ID                             |
+|Line 5   | ITZ A        | KEYWORD                        |
+|Line 5   | TROOF        | KEYWORD                        |
+|Line 6   | GIMMEH       | KEYWORD                        |
+|Line 6   | x            | ID                             |
+|Line 6   | ;            | SS                             |
+|Line 6   | GIMMEH       | KEYWORD                        |
+|Line 6   | y            | ID                             |
+|Line 6   | ;            | SS                             |
+|Line 6   | z            | ID                             |
+|Line 6   | R            | KEYWORD                        |
+|Line 6   | SUM OF       | KEYWORD                        |
+|Line 6   | 1x           | ERROR: Unrecognized Token.     |
+|Line 6   | AN           | KEYWORD                        |
+|Line 6   | y            | ID                             |
+|Line 6   | ;            | SS                             |
+|Line 7   | VISIBLE      | KEYWORD                        |
+|Line 7   | PRODUKT OF   | KEYWORD                        |
+|Line 7   | QUOSHUNT OF  | KEYWORD                        |
+|Line 7   | x            | ID                             |
+|Line 7   | AND          | ERROR: Unrecognized Token.     |
+|Line 7   | 37           | CONST                          |
+|Line 7   | ;            | SS                             |
+|Line 8   | IM IN YR     | KEYWORD                        |
+|Line 8   | loop         | ID                             |
+|Line 8   | WILE         | KEYWORD                        |
+|Line 8   | z            | ID                             |
+|Line 9   | O RLY?       | KEYWORD                        |
+|Line 9   | WIN          | KEYWORD                        |
+|Line 9   | YA RLY       | KEYWORD                        |
+|Line 9   | z            | ID                             |
+|Line 9   | R            | KEYWORD                        |
+|Line 9   | FAIL         | KEYWORD                        |
+|Line 9   | NO WAI       | KEYWORD                        |
+|Line 9   | z            | ID                             |
+|Line 9   | R            | KEYWORD                        |
+|Line 9   | NOT          | KEYWORD                        |
+|Line 9   | WIN          | KEYWORD                        |
+|Line 9   | OIC          | KEYWORD                        |
+|Line 10  | IM OUTTA YR  | KEYWORD                        |
+|Line 10  | loop         | ID                             |
+|Line 10  | ;            | SS                             |
+|Line 11  | WTF?         | KEYWORD                        |
+|Line 11  | BOTH OF      | KEYWORD                        |
+|Line 11  | WIN          | KEYWORD                        |
+|Line 11  | AN           | KEYWORD                        |
+|Line 11  | FAIL         | KEYWORD                        |
+|Line 12  | OMG          | KEYWORD                        |
+|Line 12  | WIN          | KEYWORD                        |
+|Line 12  | z            | ID                             |
+|Line 12  | R            | KEYWORD                        |
+|Line 12  | z            | ID                             |
+|Line 12  | ;            | SS                             |
+|Line 13  | OMG          | KEYWORD                        |
+|Line 13  | FAIL         | KEYWORD                        |
+|Line 13  | I HAS A      | KEYWORD                        |
+|Line 13  | w            | ID                             |
+|Line 13  | ITZ A        | KEYWORD                        |
+|Line 13  | TROOF        | KEYWORD                        |
+|Line 13  | FOUND YR     | KEYWORD                        |
+|Line 13  | 25.5.5       | ERROR: Unrecognized Token.     |
+|Line 14  | OIC          | KEYWORD                        |
+|Line 15  | HOW IZ I     | KEYWORD                        |
+|Line 15  | sub          | ID                             |
+|Line 15  | YR           | KEYWORD                        |
+|Line 15  | x            | ID                             |
+|Line 15  | YR           | KEYWORD                        |
+|Line 15  | y            | ID                             |
+|Line 15  | YR           | KEYWORD                        |
+|Line 15  | z            | ID                             |
+|Line 15  | YR           | KEYWORD                        |
+|Line 15  | w            | ID                             |
+|Line 16  | I IZ         | KEYWORD                        |
+|Line 16  | sub          | ID                             |
+|Line 16  | YR           | KEYWORD                        |
+|Line 16  | y            | ID                             |
+|Line 16  | YR           | KEYWORD                        |
+|Line 16  | x            | ID                             |
+|Line 16  | YR           | KEYWORD                        |
+|Line 16  | w            | ID                             |
+|Line 16  | YR           | KEYWORD                        |
+|Line 16  | z            | ID                             |
+|Line 16  | MKAY         | KEYWORD                        |
+|Line 17  | GTFO         | KEYWORD                        |
+|Line 18  | IF YOU       | ERROR: Unrecognized Token.     |
+|Line 18  | SAY          | ERROR: Unrecognized Token.     |
+|Line 18  | SO           | ERROR: Unrecognized Token.     |
+|Line 19  | KTHXBYE      | KEYWORD                        |
+-----------------------------------------------------------
+*****SYMTAB CONTENTS*****
+------------------------------------------
+|Line   # | VAR_NAME        | VAR_TYPE   |
+------------------------------------------
+|Line 3   | x               | ID         |
+|Line 4   | y               | ID         |
+|Line 5   | z               | ID         |
+|Line 7   | 37              | CONST      |
+|Line 8   | loop            | ID         |
+|Line 13  | w               | ID         |
+|Line 15  | sub             | ID         |
+------------------------------------------
