@@ -10,6 +10,7 @@ import java.io.IOException;
  * at the University of Oklahoma.
  * 
  * @author Cameron
+ * @deprecated Used only in project 1
  * @version 1.0
  */
 public class Project1_Scanner {
@@ -45,78 +46,19 @@ public class Project1_Scanner {
 	/**
 	 * Insertion point for program. Calls parser.
 	 * @param args program arguments provided via command-line
+	 * @deprecated this project is no longer used
 	 */
-	public static void main(String[] args) {
+	public static void main2(String[] args) {
+		/**Read entire program into String buffer.*/
+		initScanner();
 		
-		/** Init all of SYMTAB to null.*/
-		setupSYMTAB();
-		/** Console Formatting*/
-		System.out.println("*****ENCOUNTERED TOKENS*****");
-		setupFormatting();
-		
-		/**Init reader vars*/
-		String fileName = "src\\MiniLOLTest";
-		BufferedReader reader = null;
-		
-		try {
-			/** Initialize reader object.*/
-			reader = new BufferedReader(new FileReader(fileName));
-			/** Start read loop.*/
-			String line;
-			while((line = reader.readLine()) != null){
-				/** Unfortunately using readLine causes the '\n' to be 
-				 * truncated, so we have to add it back in.*/
-				line += '\n';
-				/** Increase lineNumber*/
-				lineNumber++;
-				
-				/** Parse line one character at a time.*/
-				for(char c: line.toCharArray()){
-					
-					/** Call SCANNER with current character.*/
-					String t_token = SCANNER(c);
-					
-					/** Scanner will return "" until a token is encountered, 
-					 * and so we skip any instances in which "" is returned.*/
-					if(!(t_token.equals(""))){
-						String[] t_token_sp = t_token.split("\\$");
-						System.out.format(OUT_FORMAT,lineNumber,t_token_sp[1],t_token_sp[0]);
-						token = "";
-					}
-				}
-			}
-			
-		/** Catch miscellaneous IO Exceptions.*/
-		} catch (FileNotFoundException e) {
-			System.err.println("File "+fileName+" could not be found. Terminating program.");
-			System.exit(-1);
-		} catch (IOException e) {
-			System.err.println("Encountered IOException while reading from file. Terminating program.");
-			System.exit(-1);
-		} finally {
-			/** Force any remaining open streams to close.*/
-			if(reader != null){
-				try {
-					reader.close();
-				} catch (IOException e) {
-					System.err.println("Encountered IOException while closing "
-							+ "stream. Terminating program.");
-					System.exit(-1);
-				}
-			}
-		}
-		/** Close formatting.*/
-		for(int i = 1; i<=OUT_FORMAT.length()+29;i++)System.out.print("-");
-		System.out.println();
-		/** Print SYMTAB */
-		printSYMTAB();
+		PARSER("test.lol");
 	}
 	
 	/**
 	 * Simulates a DFA. Returns a single token in Mini-LOL syntax.
 	 * @param c the current character being observed by the DFA
 	 * @return A token in the format "[type]$[token]". This will be returned as "" until a token has been fully generated.
-	 * @throws InterruptedException 
 	 */
 	public static String SCANNER(char c){
 
@@ -1367,7 +1309,6 @@ public class Project1_Scanner {
 	 * Error handler. Writes error messages to the command line.
 	 * @param not_token The error text given to the parser.
 	 * @return Any residual information appended to the token.
-	 * @throws InterruptedException 
 	 */
 	private static String ERROR(String not_token){
 		System.out.format(OUT_FORMAT,lineNumber,not_token,"ERROR: Unrecognized Token.");
@@ -1378,6 +1319,7 @@ public class Project1_Scanner {
 	 * Maintains the SYMTAB object, adding identifiers and 
 	 * their associated types as necessary.
 	 * @param token Obtained from DFA implementation. Token will be added to the table.
+	 * @return the formatted string form of the token being inserted.
 	 */
 	private static String BOOKKEEPER(String token){
 		token = lineNumber+"$"+token;
@@ -1434,6 +1376,77 @@ public class Project1_Scanner {
 		System.out.format("|Line %3s | %-12s | %-30s |%n","#","Token","Type");
 		for(int i = 1; i<=OUT_FORMAT.length()+29;i++)System.out.print("-");
 		System.out.println();
+	}
+	
+	private static String PARSER(String program){
+		String parsedOutput = "";
+		
+		return parsedOutput;
+	}
+
+	private static void initScanner() {
+		/** Init all of SYMTAB to null.*/
+		setupSYMTAB();
+		/** Console Formatting*/
+		System.out.println("*****ENCOUNTERED TOKENS*****");
+		setupFormatting();
+		
+		/**Init reader vars*/
+		String fileName = "src\\MiniLOLTest";
+		BufferedReader reader = null;
+		
+		try {
+			/** Initialize reader object.*/
+			reader = new BufferedReader(new FileReader(fileName));
+			/** Start read loop.*/
+			String line;
+			while((line = reader.readLine()) != null){
+				/** Unfortunately using readLine causes the '\n' to be 
+				 * truncated, so we have to add it back in.*/
+				line += '\n';
+				/** Increase lineNumber*/
+				lineNumber++;
+				
+				/** Parse line one character at a time.*/
+				for(char c: line.toCharArray()){
+					
+					/** Call SCANNER with current character.*/
+					String t_token = SCANNER(c);
+					
+					/** Scanner will return "" until a token is encountered, 
+					 * and so we skip any instances in which "" is returned.*/
+					if(!(t_token.equals(""))){
+						String[] t_token_sp = t_token.split("\\$");
+						System.out.format(OUT_FORMAT,lineNumber,t_token_sp[1],t_token_sp[0]);
+						token = "";
+					}
+				}
+			}
+			
+		/** Catch miscellaneous IO Exceptions.*/
+		} catch (FileNotFoundException e) {
+			System.err.println("File "+fileName+" could not be found. Terminating program.");
+			System.exit(-1);
+		} catch (IOException e) {
+			System.err.println("Encountered IOException while reading from file. Terminating program.");
+			System.exit(-1);
+		} finally {
+			/** Force any remaining open streams to close.*/
+			if(reader != null){
+				try {
+					reader.close();
+				} catch (IOException e) {
+					System.err.println("Encountered IOException while closing "
+							+ "stream. Terminating program.");
+					System.exit(-1);
+				}
+			}
+		}
+		/** Close formatting.*/
+		for(int i = 1; i<=OUT_FORMAT.length()+29;i++)System.out.print("-");
+		System.out.println();
+		/** Print SYMTAB */
+		printSYMTAB();
 	}
 
 }
